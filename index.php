@@ -27,12 +27,35 @@ if(isset($_SESSION["loggedIn"]) == 0 && isset($_SESSION["userName"]) == 0){
 </head>
 
 <body>
-    <h1>Je bent ingelogd</h1>
+ 
     <button type='button' onclick='init()'>Start</button>
     <div id="webcam-container"></div>
     <div id="label-container"></div>
 
     <script src="teachableMachine.js"></script>
+    
+    <header>
+        <h1> Plant Tool </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href=""> sensor 1 </a></li>
+            <li><a href=""> sensor 2 </a></li>
+            <li><a href=""> sensor 3 </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="sensor-output">
+            <h3> Sensor 1: Aloë Vera </h3>
+            <p> Your plant could use some more water!</p>
+            <p> It's a little to warm for your plant at the moment. You might want to move it to the shadows a bit.</p>
+        </section>
+
+
+
+    </main>
+    
 </body>
 
 </html>
