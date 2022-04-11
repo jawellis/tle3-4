@@ -10,11 +10,6 @@ if(isset($_SESSION["loggedIn"]) == 0 && isset($_SESSION["userName"]) == 0){
     die();
 }
 
-// if(!isset($_SESSION["loggedIn"]) && !isset($_SESSION["userName"])){
-//     header("location: login.php?error=notloggedin");
-//     die();
-// }
-
 ?>
 
 <!DOCTYPE html>
