@@ -47,5 +47,16 @@ async function predict() {
         const classPrediction =
             prediction[i].className + ": " + prediction[i].probability.toFixed(2);
         labelContainer.childNodes[i].innerHTML = classPrediction;
+        // console.log(prediction[i])
+
+        if (prediction[2].probability >= 0.60) {
+            console.log("Aloe Vera")
+        }
+        
     }
 }
+
+function predictAloe() {
+if (prediction[2].probability >= 0.60) {
+    console.log("Aloe Vera")
+}}
